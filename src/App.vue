@@ -2,18 +2,18 @@
   <div class="home">
     <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
     <div>
-      <tree :data="treeData" @onNodeSelection="selectedNode"/>
+      <tree :data="treeData" @onNodeSelection="selectedNode" />
     </div>
 
     <div>
-      <h1>My Instagram</h1>
+      <h1 href="https://github.com/CodesOfRa/d3-vue-graph">My Instagram</h1>
       <div v-for="(colour,index) in nodesColour" :key="colour" class="legendColourItem">
         <div :style="{background:colour}" class="legendColour"></div>
         <span>{{legendValues[index]}}</span>
       </div>
       <div v-if="selected" class="details">
         <span>Total:{{selected.total}}</span>
-        <img :src="selected.src">
+        <img :src="selected.src" />
       </div>
     </div>
   </div>

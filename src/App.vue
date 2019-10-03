@@ -6,7 +6,9 @@
     </div>
 
     <div>
-      <h1 href="https://github.com/CodesOfRa/d3-vue-graph">My Instagram</h1>
+      <a href="https://github.com/CodesOfRa/d3-vue-graph">
+        <h1>My Instagram</h1>
+      </a>
       <div v-for="(colour,index) in nodesColour" :key="colour" class="legendColourItem">
         <div :style="{background:colour}" class="legendColour"></div>
         <span>{{legendValues[index]}}</span>
